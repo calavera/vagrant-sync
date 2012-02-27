@@ -18,9 +18,9 @@ $ vagrant sync [vm_name] --from /bar/foo --to /foo/bar
 
 ## Options
 
-* --from:    source file or directory, if this options is not provided the current directory is copied.
+* --from:    source file or directory, if this option is not provided the current directory is copied.
 * --to:      destination directory, mandatory.
-* --verbose  very verbose.
+* --verbose: very verbose.
 
 ## Copyright
 
