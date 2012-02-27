@@ -4,6 +4,12 @@ Vagrant command to copy files in your box using rsync.
 
 You don't need to add anything to your ssh-config to use this command.
 
+## Installation
+
+```
+$ gem install vagrant-sync
+```
+
 ## Usage
 
 ```
