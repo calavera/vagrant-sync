@@ -27,8 +27,8 @@ class Sync < Vagrant::Command::Base
     options[:from] ||= Dir.pwd
 
     with_target_vms(argv[0], :single_target => true) do |vm|
-      raise Errors::VMNotCreatedError if !vm.created?
-      raise Errors::VMInaccessible if !vm.state == :inaccessible
+      raise Vagrant::Errors::VMNotCreatedError if !vm.created?
+      raise Vagrant::Errors::VMInaccessible if !vm.state == :inaccessible
 
       with_target_vms(argv[0], :single_target => true) do |vm|
         ssh_info  = vm.ssh.info
